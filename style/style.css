@@ -1,0 +1,84 @@
+/* ===== BODY ===== */
+html, body {
+  height: 100%;
+  margin: 0;
+  font-size: 25px;
+  
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: Menlo, Monaco, Lucida Console, 'Courier New', Courier, monospace;
+  background-color: #efede3;
+}
+
+/* ===== HEADER ===== */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.header-left {
+  display: flex;
+  flex-direction: column; /* h1 + nav vertical */
+}
+
+img {
+  max-width: 100%;
+  border-radius: 50%;
+  height: auto;
+}
+
+.nav {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.header-right img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+/* ===== MAIN ===== */
+main {
+  flex: 1; /* ocupa todo el espacio restante */
+  padding: 20px;
+}
+
+/* ===== LINKS ===== */
+.link1, .link2 {
+  text-decoration: none;
+  color: #302f2c;
+  font-weight: bold;
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+
+/* ===== H1, H2 ===== */
+h1, h2 {
+  
+  margin-top: 40px;
+  color: #302f2c;
+  margin: 0;
+}
+
+/* ===== P ===== */
+p {
+  color: #777;
+  line-height: 1.5;
+  font-size: 0.8rem;
+  margin: 0 0 20px 0;
+}
+
+/* ===== FOOTER ===== */
+footer {
+ 
+  text-align: center;
+  padding: 10px 0;
+  width: 100%;
+}
