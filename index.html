@@ -1,55 +1,121 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Mi portafolio</title>
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style.css">
 
 </head>
 
-<body class="body">
+<body>
 
     <header>
-
         <div class="logo">
-
-
-            <h1>Pablo</h1>
-
-            <nav>
-                <a class="link1" href="https://instagram.com/pablofdz0" target="_blank">Instagram</a>
-                <a class="link2" href="https://tiktok.com/@fdezz.pablo" target="_blank">TikTok</a>
-            </nav>
-
+            <img class="logo-img" title="LOGO" alt="Logo" src="./data/logo.png">
+            <h1>Pablo Fernández Camino</h1>
         </div>
 
+        <nav>
+            <a class="link" href="https://linkedin.com" target="_blank">LinkedIn</a>
+            <a class="link" href="https://github.com/pablofdz0" target="_blank">Github</a>
 
-        <img  title="FOTO" alt="Foto mía" src="data/yo.png" width="200" height="200">
-
-
-
-
+            <a class="contact-btn" href="mailto:pablofcamino@gmail.com" target="_blank">
+                Contact
+            </a>
+        </nav>
     </header>
+
 
     <main>
 
 
 
 
-        <section>
-            <h2>About</h2>
-            <p>Soy un estudiante de informática que está en proceso de aprendizaje.
-                Estudiando y aprendiendo HTML, CSS y JavaScript. Esto es un intento de tarjeta de presentación.</p>
+        <section class="about-me">
+
+            <img class="yo" title="FOTO" alt="Foto mía" src="data/yo.png" width="200" height="200">
+
+            <div id="about">
+                
+                <p>Estudiante de Ingeniería Informática con pasión por el desarrollo de software y la creación de
+                    aplicaciones web y móviles. He trabajado en proyectos personales, incluyendo una app de mensajería
+                    para parejas. Busco seguir aprendiendo y enfrentando nuevos desafíos tecnológicos, aplicando
+                    creatividad y habilidades técnicas para construir soluciones prácticas.</p>
+            </div>
         </section>
 
 
-        <section>
-            <h2>Contact</h2>
-            <a href="mailto:pablofcamino@gmail.com">pablofcamino@gmail.com</a>
+
+        <h2>Experiencia</h2>
+        <section class="timeline">
+
+            <div class="timeline-item">
+                <div class="timeline-point">
+                    <span class="timeline-date">2021</span>
+                    <span class="timeline-name">Macro Discomóvil Radikal</span>
+                </div>
+                <div class="timeline-content">
+
+                    <p>Montaje y desmontaje de equipos de sonido, luces y pantallas; gestión de la iluminación durante
+                        las actuaciones.</p>
+                    <p class="hab">Organización, coordinación técnica, atención al detalle y resolución de problemas en
+                        tiempo real.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-point">
+                    <span class="timeline-date">2022 - 2024</span>
+                    <span class="timeline-name">Charleston Big-Band</span>
+
+                </div>
+                <div class="timeline-content">
+
+                    <p>Soy un estudiante de informática en proceso de aprendizaje: HTML, CSS y JavaScript.</p>
+                    <p class="hab">Trabajo en equipo, gestión técnica de eventos, responsabilidad y adaptabilidad en
+                        entornos dinámicos.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-point">
+                    <span class="timeline-date">Verano 2025</span>
+                    <span class="timeline-name">Bar Piscinas</span>
+
+                </div>
+                <div class="timeline-content">
+
+                    <p>Atención al cliente, preparación de pedidos y gestión de caja en un entorno concurrido.</p>
+                    <p class="hab">Comunicación, gestión del tiempo, adaptabilidad y servicio al cliente.</p>
+                </div>
+            </div>
         </section>
+
+
+
+        <section>
+            <h2>Educación</h2>
+            <h3>Grado en Ingeniería Informática</h3>
+            <p>Universidad de Vigo (Ourense, Galicia) (2021 - Presente)</p>
+
+            <h3>Bachillerato de Ciencias</h3>
+            <p>IES As Lagoas (Ourense, Galicia) (2019 - 2021)</p>
+
+        </section>
+
+        <section>
+            <h2>Idiomas</h2>
+            <p>Español: Nativo</p>
+            <p>Gallego: nativo (Celga 4)</p>
+            <p>Inglés: Intermedio (Certificado Trinity, nivel bachillerato)</p>
+
+        </section>
+
+
+
 
     </main>
 

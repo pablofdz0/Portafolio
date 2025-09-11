@@ -1,0 +1,292 @@
+/* ===== BODY ===== */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+
+  background-color: #101d26;
+}
+
+/* ===== HEADER ===== */
+header {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-top: 0px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
+}
+
+
+.logo-img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+
+}
+
+.logo h1 {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 80px;
+}
+
+
+
+.link {
+  text-decoration: none;
+  color: #f8500a;
+  font-weight: 100;
+  margin-left: 20px;
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+
+.contact-btn {
+  display: inline-block;
+  padding: 0.6rem 1rem;
+  background-color: #1f2f40;
+  /* azul LinkedIn */
+  color: #f8500a;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 50;
+  font-size: 0.8rem;
+  cursor: pointer;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.contact-btn:hover {
+  background-color: #384358;
+  color: #FFA586;
+}
+
+
+
+/* ===== MAIN ===== */
+main {
+  display: flex;
+  flex-direction: column;
+  /* organiza el contenido en columna */
+  justify-content: center;
+  /* centra verticalmente dentro del main */
+  align-items: center;
+  /* centra horizontalmente el contenido */
+
+  margin: 40px auto;
+  max-width: 1000px;
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+.timeline {
+  position: relative;
+  margin: 50px 0;
+  padding-left: 80px;
+  /* espacio para línea + puntos */
+  color: #dde2e5;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  font-family: 'Source Sans Pro';
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 60px;
+  /* línea central */
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background-color: #1f2f40;
+}
+
+.timeline-item {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  /* alineamos verticalmente */
+  margin-bottom: 40px;
+}
+
+/* PUNTO */
+.timeline-point {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #AFB3B7;
+  flex-shrink: 0;
+  /* no se encoge */
+  margin-left: -26px;
+  /* alineado con la línea */
+  margin-top: 5px;
+  /* ajuste fino vertical */
+}
+
+/* FECHA */
+.timeline-date {
+  position: absolute;
+  left: 0;
+  /* a la izquierda de la línea */
+  width: 100px;
+  text-align: left;
+  font-size: 0.85rem;
+  margin-top: 30px;
+  margin-left: 90px;
+  color: #5A636A;
+}
+
+.timeline-name {
+  position: absolute;
+  left: 80px;
+  /* a la derecha de la fecha */
+  width: 250px;
+  text-align: left;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #D9D9D9;
+  margin-top: 0px;
+}
+
+/* TARJETA DE CONTENIDO */
+.timeline-content {
+  background-color: #1f2f40;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  color: #AFB3B7;
+  margin-left: 400px;
+  /* espacio desde la línea */
+  max-width: 600px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.timeline-content h3 {
+  font-family: 'Montserrat', sans-serif;
+  color: #69818D;
+  margin-bottom: 5px;
+}
+
+.timeline-content .hab {
+  color: #5A636A;
+  font-style: italic;
+  margin-top: 5px;
+}
+
+
+
+
+
+.yo {
+  width: 300px;
+  height: 300px;
+  /* altura fija para shape-outside */
+  border-radius: 50%;
+  /* círculo */
+  float: left;
+  shape-outside: circle(50%);
+  
+  
+  
+}
+
+.about-me {
+  display: flex;
+  align-items: center;
+  /* centra verticalmente la foto con el texto */
+  gap: 1.5rem;
+  /* espacio entre la foto y el texto */
+  /* opcional: ancho máximo de la sección */
+  margin-top: 150px;
+  /* centrado horizontal */
+}
+
+
+
+.about-me #about {
+  margin-top: 0px;
+  text-align: left;
+  /* texto alineado a la izquierda */
+}
+
+.about-me #about h2 {
+  margin-top: 0;
+  text-align: left;
+}
+
+.about-me #about p {
+  margin-top: 10px;
+}
+
+h1,
+h2,
+h3 {
+  font-family: Montserrat, sans-serif;
+}
+
+h1 {
+  margin: 0;
+  margin-top: 40px;
+  color: #f8500a;
+
+
+}
+
+h2 {
+  margin: 0;
+  position: relative;
+  margin-top: 40px;
+  text-align: center;
+  font-size: 2rem;
+  color: #f8500a;
+}
+
+h3 {
+  margin: 0;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  color: #b73200;
+}
+
+/* ===== P ===== */
+p {
+  color: #dde2e5;
+  font-size: 1.3rem;
+  line-height: 1.5;
+
+  font-family: 'Source Sans Pro';
+  margin: 0 0 10px 0;
+}
+
+
+
+
+
+
+
+/* ===== FOOTER ===== */
+footer {
+  text-align: center;
+  padding: 10px 0;
+  width: 100%;
+}
