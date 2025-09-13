@@ -29,6 +29,7 @@ header {
   display: flex;
   align-items: center;
   gap: 5px;
+  margin-left: 20px;
 
 }
 
@@ -44,6 +45,8 @@ header {
   margin: 0;
   font-size: 1rem;
   line-height: 80px;
+  margin-top: 10px;
+  ;
 }
 
 
@@ -96,7 +99,7 @@ main {
 }
 
 section {
-  margin-bottom: 40px;
+  margin-bottom: 200px;
   width: 100%;
 }
 
@@ -108,7 +111,9 @@ section {
   color: #dde2e5;
   font-size: 1.2rem;
   line-height: 1.5;
-  font-family: 'Source Sans Pro';
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 200px;
+  ;
 }
 
 .timeline::before {
@@ -151,7 +156,7 @@ section {
   /* a la izquierda de la línea */
   width: 100px;
   text-align: left;
-  font-size: 0.85rem;
+  font-size: 1rem;
   margin-top: 30px;
   margin-left: 90px;
   color: #5A636A;
@@ -171,14 +176,14 @@ section {
 
 /* TARJETA DE CONTENIDO */
 .timeline-content {
-  background-color: #1f2f40;
+  background-color: #0a1318;
   border-radius: 5px;
   padding: 0.5rem 1rem;
   color: #AFB3B7;
   margin-left: 400px;
   /* espacio desde la línea */
   max-width: 600px;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .timeline-content h3 {
@@ -194,6 +199,45 @@ section {
 }
 
 
+.skills {
+  text-align: center;
+  margin: 60px auto;
+  max-width: 1000px;
+  margin-bottom: 200px;
+}
+
+.skills h2 {
+  color: #f8500a;
+  font-family: Montserrat, sans-serif;
+  font-size: 2rem;
+  margin-bottom: 50px;
+}
+
+.skills-line {
+  display: flex;
+  justify-content: center;
+  /* centra horizontalmente */
+  align-items: center;
+  gap: 40px;
+  /* espacio entre iconos */
+  flex-wrap: wrap;
+  /* permite saltar a otra fila en pantallas pequeñas */
+}
+
+.skill img {
+  width: 60px;
+  height: 60px;
+  transition: transform 0.2s ease, filter 0.2s ease;
+  filter: grayscale(20%);
+  margin-left: 4px;
+}
+
+.skill img:hover {
+  transform: scale(1.2);
+  filter: grayscale(0%);
+}
+
+
 
 
 
@@ -205,9 +249,9 @@ section {
   /* círculo */
   float: left;
   shape-outside: circle(50%);
-  
-  
-  
+
+
+
 }
 
 .about-me {
@@ -238,10 +282,33 @@ section {
   margin-top: 10px;
 }
 
+.educacion {
+  display: flex;
+  justify-content: space-between;
+  /* separa los grupos */
+  align-items: center;
+}
+
+/* Agrupar h3 y el 3er hijo en una columna */
+.educacion h3,
+.educacion p:nth-child(3) {
+  order: 1;
+  /* grupo izquierdo */
+}
+
+/* Primer <p> (la fecha) a la derecha */
+.educacion p:nth-child(2) {
+  order: 2;
+  margin-left: 20px;
+  /* opcional */
+}
+
+
+
 h1,
 h2,
 h3 {
-  font-family: Montserrat, sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 h1 {
